@@ -16,7 +16,7 @@ public class demo1 {
   
   @Test(groups= {"regression"})
   public void login() {
-	 System.out.println("Todays other changes");
+	 System.out.println("Todays other team member changes");
 
 	  System.out.println("Login for applications");
   }
