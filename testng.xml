@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+  <parameter name ="envName" value = "QA"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name ="browser1" value= "Firefox"></parameter>
+  <parameter name = "browser2" value = "Safari"></parameter>
+
+  <groups>
+  <run>
+  <include name = "smoke"></include>
+  <include name = "sanity"></include>
+  </run>
+  </groups>
+ 
+<group>
+<run>
+<include name = "regression"></include>
+</run>
+
+</group>
+
+
+  
+  <classes>
+  <class name="com.demo.step.NewTest3"></class>
+  <class name="com.demo.step.NewTest1"></class>
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

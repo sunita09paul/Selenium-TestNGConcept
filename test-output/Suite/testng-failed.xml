@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+  <parameter name="envName" value="QA"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browser1" value="Firefox"/>
+  <test name="Test(failed)" parallel="none">
+    <parameter name="envName" value="QA"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browser1" value="Firefox"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.demo.step.NewTest3">
+        <methods>
+          <include name="Test5"/>
+        </methods>
+      </class> <!-- com.demo.step.NewTest3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
