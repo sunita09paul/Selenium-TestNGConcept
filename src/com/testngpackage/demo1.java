@@ -16,7 +16,6 @@ public class demo1 {
   
   @Test(groups= {"regression"})
   public void login() {
-	  System.out.println("Todays new changes");
 	  System.out.println("Login for applications");
   }
   @Test(groups = {"beta"})
