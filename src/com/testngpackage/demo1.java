@@ -11,13 +11,12 @@ import org.testng.annotations.Test;
 public class demo1 {
   @BeforeMethod
   public void setupapplication() {
+	  System.out.println("Todays my changes on project");
 	  System.out.println("Launch the browser");
   }
   
   @Test(groups= {"regression"})
   public void login() {
-	 System.out.println("Todays other changes");
-
 	  System.out.println("Login for applications");
   }
   @Test(groups = {"beta"})
